@@ -1,6 +1,8 @@
 # Customer Complaints v0.1 (CuCom) Dataset
 
-A multilingual dataset of ~10,000 customer service conversations between users and AI assistants in the banking and insurance domain.
+A multilingual dataset of ~10,000 customer service conversations between users and AI assistants in the following domains:
+    - banking and insurance (Devanagari, English mix)
+    - ecommerce (English)
 
 ## Description
 This dataset contains **synthetic user-agent conversations** in JSON format, simulating customer complaint resolution scenarios. Each entry represents a dialogue between a frustrated customer (user) and a customer support agent (LLM-based assistant), covering issues like investment delays, extra charges, insurance claims, card blocking, and service failures.
@@ -8,7 +10,7 @@ This dataset contains **synthetic user-agent conversations** in JSON format, sim
 ### Format
 ```json
 {
-  "id": "conv_9855",
+  "id": "conv_id",
   "turns": [
     {"role": "user", "content": "..."},
     {"role": "assistant", "content": "..."}
@@ -23,19 +25,38 @@ This dataset contains **synthetic user-agent conversations** in JSON format, sim
 - Study **cross-lingual intent recognition** in real-world scenarios
 
 ## Languages
-1. **Hindi (Devanagari script)**
-2. **Hinglish** (Hindi-English code-mixing)
-3. **Transliterated Hindi** (Roman script)
-4. **English**
+
+For banking/insurance v0.1:
+    1. **Hindi (Devanagari script)**
+    2. **Hinglish** (Hindi-English code-mixing)
+    3. **Transliterated Hindi** (Roman script)
+    4. **English**
+For ecommerce v0.1:
+    1. Indian English (User)
+    2. Formal Indian English (Agent)
 
 ## Dataset Details
+
+Banking/Insurance v0.1:
+
 | Parameter       | Value                     |
 |-----------------|---------------------------|
 | Conversations   | 9,858                    |
 | Avg Turns/Dialogue | 8-16                      |
 | Domains         | Banking, Insurance        |
-| Total turns | 136642 |
+| Total turns | 1,36,642 |
 | Text Characteristics | Emotional language, slang, code-switching |
+
+Ecommerce v0.1:
+
+| Parameter       | Value                     |
+|-----------------|---------------------------|
+| Conversations   | 6,0000                    |
+| Avg Turns/Dialogue | 8-16                      |
+| Domains         | Ecommerce        |
+| Total turns | 71,686 |
+| Text Characteristics | Emotional language |
+
 
 ## Key Use Cases
 1. **Multilingual Chatbot Training**
@@ -54,11 +75,6 @@ This dataset contains **synthetic user-agent conversations** in JSON format, sim
    - Study code-switching patterns
    - Analyze informal financial vocabulary
 
-## Getting Started
-1. **Download Dataset**
-   ```bash
-   wget https://github.com/vakyansh/cucom/raw/refs/heads/main/data/cucuom_v1.jsonl.zip
-   ```
 
 
 ## License
@@ -69,7 +85,7 @@ We welcome contributions through:
 - Additional annotations (emotion labels, intent tags)
 - Improved translations
 - More conversation samples
-- More Domain
+- More Domains
 
 Please open an issue or PR if you want to request any additional domain.
 
