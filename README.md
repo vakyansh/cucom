@@ -27,13 +27,14 @@ This dataset contains **synthetic user-agent conversations** in JSON format, sim
 ## Languages
 
 For banking/insurance v0.1:
-    1. **Hindi (Devanagari script)**
-    2. **Hinglish** (Hindi-English code-mixing)
-    3. **Transliterated Hindi** (Roman script)
-    4. **English**
+1. **Hindi (Devanagari script)**
+2. **Hinglish** (Hindi-English code-mixing)
+3. **Transliterated Hindi** (Roman script)
+4. **English**
+
 For ecommerce v0.1:
-    1. Indian English (User)
-    2. Formal Indian English (Agent)
+1. Indian English (User)
+2. Formal Indian English (Agent)
 
 ## Dataset Details
 
